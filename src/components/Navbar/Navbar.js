@@ -15,6 +15,7 @@ import {
     DropdownItem,
     NavbarText
 } from 'reactstrap';
+import {Link} from "react-router-dom";
 
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,50 +34,51 @@ const NavBar = (props) => {
         <div>
             <Navbar color="dark" expand="md" dark>
                 <div className="container">
+                    <Nav right>
+                        <Link className="text-uppercase text-center ml-4 text-light" to="/">
+                            <FontAwesomeIcon  icon={faCity} size={"lg"} />
+                        </Link>
+                    </Nav>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
-                        <Nav className="m-auto" navbar>
-                            <NavItem right>
-                                <NavLink className="text-uppercase text-center ml-4" href="/main/">
-                                    <FontAwesomeIcon  icon={faCity} size={"lg"} />
-                                </NavLink>
-                            </NavItem>
+                        <Nav className="m-auto">
                             <NavItem>
-                                <NavLink className="text-uppercase text-center ml-4" href="/home/">
+                                <Link className="text-uppercase text-center ml-4 text-light" to="/home/">
                                     <FontAwesomeIcon  icon={faHome} /> Home
-                                </NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-uppercase text-center ml-4" href="/news/">
+                                <Link className="text-uppercase text-center ml-4 text-light" to="/news/">
                                     <FontAwesomeIcon  icon={faNewspaper} /> News
-                                </NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-uppercase text-center ml-4" href="/transport/">
+                                <Link className="text-uppercase text-center ml-4 text-light" to="/transport/">
                                     <FontAwesomeIcon  icon={faBusAlt} /> Transport
-                                </NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-uppercase text-center ml-4" href="/food/">
+                                <Link className="text-uppercase text-center ml-4 text-light" to="/food/">
                                     <FontAwesomeIcon  icon={faHamburger} /> Food
-                                </NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-uppercase text-center ml-4" href="/contact/">
+                                <Link className="text-uppercase text-center ml-4 text-light" to="/contact/">
                                     <FontAwesomeIcon  icon={faIdCard} /> Contact us
-                                </NavLink>
+                                </Link>
                             </NavItem>
-
+                        </Nav>
+                        <Nav isOpen={isOpen}>
+                            <div className="nav justify-content-end ml-4">
+                                <NavItem>
+                                    <Input className="my-2" type="search" name="search" id="searchExample" placeholder="Search" />
+                                </NavItem>
+                                <NavItem>
+                                    <Button className="float-lg-right m-2">Search</Button>
+                                </NavItem>
+                            </div>
                         </Nav>
                     </Collapse>
-                </div>
-                <div className="nav justify-content-end">
-                      <Nav>
-                          <Input type="search" name="search" id="searchExample" placeholder="Search" />
-                      </Nav>
-                      <Nav>
-                          <Button className="float-lg-right">Search</Button>
-                      </Nav>
                 </div>
             </Navbar>
         </div>
