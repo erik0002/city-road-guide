@@ -19,7 +19,7 @@ import {Link} from "react-router-dom";
 
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faCity, faNewspaper, faIdCard, faHamburger, faBusAlt} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faCity, faNewspaper, faIdCard, faHamburger, faBusAlt} from '@fortawesome/free-solid-svg-icons';
 
 
 

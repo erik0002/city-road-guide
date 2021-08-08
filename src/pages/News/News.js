@@ -1,12 +1,18 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import NewsCard from "../../components/NewsCard/NewsCard";
+import {InfoConsumer} from "../../components/Context/context";
 
 class News extends Component {
     render (){
         return (
-            <div>
-                <h2>News Page...</h2>
-            </div>
-        )
+            <InfoConsumer>
+                { value => {
+                    return value.news.map(item => {
+                        return <NewsCard key={item.id} item={item}/>
+                    });
+                }}
+            </InfoConsumer>
+        );
     }
 }
 

@@ -10,7 +10,20 @@ class InfoProvider extends Component {
     state = {
         places: placeInfo,
         reviews, detailInfo, news
+    }
 
+    getItem = id => {
+        const item = this.state.places.find(item => item.id === id )
+        return item
+    }
+
+    handleDetail = id => {
+        const item = this.getItem(id)
+        this.setState(() => {
+            return {
+                detailInfo: item
+            };
+        });
     }
 
     render (){
@@ -19,7 +32,8 @@ class InfoProvider extends Component {
                 places: this.state.places,
                 reviews: this.state.reviews,
                 detailInfo: this.state.detailInfo,
-                news: this.state.news
+                news: this.state.news,
+                handleDetail: this.handleDetail
             }}>
                 {this.props.children}
             </InfoContext.Provider>

@@ -1,6 +1,5 @@
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import s from './App.css';
 import {Switch, Route} from "react-router-dom";
 import Home from "./pages/Home/Home";

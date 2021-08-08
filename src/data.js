@@ -5,6 +5,11 @@ import mars from './asserts/images/mars.jpg';
 import pushkin from './asserts/images/pushkin.jpg';
 import tretyakovka from './asserts/images/tretyakovka.jpg';
 import domFotografii from './asserts/images/dom-fotografii.jpg';
+import avatar1 from './asserts/avatars/avatar-1.png';
+import avatar2 from './asserts/avatars/avatar-2.png';
+import avatar3 from './asserts/avatars/avatar-3.png';
+import avatar4 from './asserts/avatars/avatar-4.png';
+import avatar5 from './asserts/avatars/avatar-5.png';
 
 export const placeInfo = [
   {
@@ -90,35 +95,35 @@ export const reviews = [
   {
     id: 1,
     name: 'John',
-    avatar: '.././avatars/avatar-1.png',
+    avatar: avatar1,
     comment:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quaerat repellendus. Ad at sit laboriosam sint ea mollitia incidunt voluptatibus inventore libero dolorem velit dolor nobis odit tempora, ex consequuntur.'
   },
   {
     id: 2,
     name: 'Mike',
-    avatar: '.././avatars/avatar-2.png',
+    avatar: avatar2,
     comment:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quaerat repellendus. Ad at sit laboriosam sint ea mollitia incidunt voluptatibus inventore libero dolorem velit dolor nobis odit tempora, ex consequuntur.'
   },
   {
     id: 3,
     name: 'Sofia',
-    avatar: '.././avatars/avatar-3.png',
+    avatar: avatar3,
     comment:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quaerat repellendus. Ad at sit laboriosam sint ea mollitia incidunt voluptatibus inventore libero dolorem velit dolor nobis odit tempora, ex consequuntur.'
   },
   {
     id: 4,
     name: 'Joseph',
-    avatar: '.././avatars/avatar-4.png',
+    avatar: avatar4,
     comment:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quaerat repellendus. Ad at sit laboriosam sint ea mollitia incidunt voluptatibus inventore libero dolorem velit dolor nobis odit tempora, ex consequuntur.'
   },
   {
     id: 5,
     name: 'Natasha',
-    avatar: '.././avatars/avatar-5.png',
+    avatar: avatar5,
     comment:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quaerat repellendus. Ad at sit laboriosam sint ea mollitia incidunt voluptatibus inventore libero dolorem velit dolor nobis odit tempora, ex consequuntur.'
   }
@@ -133,7 +138,7 @@ export const detailInfo = {
   title: 'Molestias officia excepturi',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui voluptate odio quod doloremque unde reprehenderit velit quaerat. Deserunt voluptatem natus suscipit aliquid, eligendi sequi dicta porro? Laudantium, libero est?',
-  img: '.././images/garaj.jpg',
+  img: Garaj2,
   maps:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1123.3850145412064!2d37.600589158335865!3d55.72774864513666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b0be3ac9d11%3A0x735806d25b3bdc55!2z0JzRg9C30LXQuSDRgdC-0LLRgNC10LzQtdC90L3QvtCz0L4g0LjRgdC60YPRgdGB0YLQstCwIMKr0JPQsNGA0LDQtsK7!5e0!3m2!1sru!2sru!4v1547763408711'
 };
